@@ -2,10 +2,15 @@ import requests
 import json
 
 from config import app_config
+from typing import Any, Dict
 
 
-def google_search():
-    query = 'site:greenhouse.io "software engineer" "Bangalore" -senior -staff -lead'
+def google_search(data: Dict[str, Any]):
+    if not data:
+        return None
+
+    query = f'site:{data["site"]} "{data["position"]}" "{data["location"]}"'  # -senior -staff -lead
+
     results = requests.get(
         app_config.search_api_base_url,
         params={
@@ -14,4 +19,5 @@ def google_search():
             "q": query,
         },
     )
+
     return results.json()
