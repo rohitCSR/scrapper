@@ -1,0 +1,18 @@
+[theme]
+base = "dark"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap, sans-serif"
+baseFontSize = 14
+codeFont = "monospace"
+
+[client]
+showErrorDetails = "none"
+
+[logger]
+level = "info"
+
+[server]
+folderWatchList = ["./src"]
+headless = true
+showEmailPrompt = false
+runOnSave = true
+port = 3000

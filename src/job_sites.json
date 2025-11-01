@@ -1,0 +1,12 @@
+[
+  { "name": "Ashby", "site": "jobs.ashbyhq.com" },
+  { "name": "Glassdoor", "site": "glassdoor.com" },
+  { "name": "Greenhouse", "site": "greenhouse.io" },
+  { "name": "Indeed", "site": "indeed.com" },
+  { "name": "Lever", "site": "jobs.lever.co" },
+  { "name": "LinkedIn", "site": "linkedin.com" },
+  { "name": "Recruitee", "site": "careers.recruitee.com" },
+  { "name": "SmartRecruiters", "site": "careers.smartrecruiters.com" },
+  { "name": "Workable", "site": "apply.workable.com" },
+  { "name": "ZipRecruiter", "site": "ziprecruiter.com" }
+]
