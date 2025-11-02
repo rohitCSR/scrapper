@@ -6,6 +6,7 @@ codeFont = "monospace"
 
 [client]
 showErrorDetails = "none"
+toolbarMode = "minimal"
 
 [logger]
 level = "info"

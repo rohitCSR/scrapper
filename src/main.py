@@ -8,6 +8,7 @@ from typing import Any, Dict, Optional
 
 
 def main():
+    st.write(":gray[ATS domain-based job search using Google dorks.]")
     form_values: Optional[Dict[str, str]] = search_form()
     data: Dict[str, Any] = google_search(form_values)
 
