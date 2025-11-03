@@ -1,10 +1,10 @@
+from typing import Any, Dict, Optional
+
 import streamlit as st
 
-from scrapper import google_search
-from form import search_form
-from list_view import list_view
-
-from typing import Any, Dict, Optional
+from src.scrapper import google_search
+from src.form import search_form
+from src.list_view import list_view
 
 
 def main():

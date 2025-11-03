@@ -1,4 +1,4 @@
 .PHONY: app
 
 app:
-	. ./.env && streamlit run src/main.py
+	. ./.env && streamlit run main.py

@@ -10,11 +10,12 @@ def list_view(items: list):
 
     for item in items:
         with st.container():
-            st.markdown(f"### [{item.get('title')}]({item.get('link')})")
-            st.markdown(f"**Company:** {item.get('displayLink', 'N/A')}")
-            snippet = item.get("snippet")
+            url: str = item.get("link")
+            st.markdown(
+                f"<a href='{item.get('link')}' target='_blank' style='text-decoration: none; color: #3d9df3; font-size: 16px;'>{item.get('htmlTitle')}</a>",
+                unsafe_allow_html=True,
+            )
+            snippet = item.get("htmlSnippet")
             if snippet:
-                st.write(snippet)
-            url = item.get("link")
-            st.markdown(f"[Apply Here]({url})", unsafe_allow_html=True)
+                st.markdown(snippet, unsafe_allow_html=True)
             st.markdown("---")

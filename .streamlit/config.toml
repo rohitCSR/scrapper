@@ -9,10 +9,10 @@ showErrorDetails = "none"
 toolbarMode = "minimal"
 
 [logger]
-level = "info"
+level = "error"
 
 [server]
-folderWatchList = ["./src"]
+folderWatchList = ["./"]
 headless = true
 showEmailPrompt = false
 runOnSave = true

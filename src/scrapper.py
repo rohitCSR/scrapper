@@ -1,8 +1,8 @@
-import requests
-import json
-
-from config import app_config
 from typing import Any, Dict
+
+import requests
+
+from src.config import app_config
 
 
 def google_search(data: Dict[str, Any]):

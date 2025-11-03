@@ -15,10 +15,13 @@ def search_form():
         )
         location = st.selectbox(
             "Choose location",
-            options=["Bengaluru", "Pune", "Mumbai", "Gurugram"],
+            options=["Remote", "Bengaluru", "Pune", "Mumbai", "Gurugram"],
         )
         submit_button = st.button("Search", use_container_width=True)
 
         if submit_button:
+            if not position.strip():
+                st.warning("Please enter a position to search.")
+                return None
             return {"position": position, "site": site, "location": location}
         return None
