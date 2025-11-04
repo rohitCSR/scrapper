@@ -16,4 +16,4 @@ folderWatchList = ["./"]
 headless = true
 showEmailPrompt = false
 runOnSave = true
-port = 3000
+port = 8501
